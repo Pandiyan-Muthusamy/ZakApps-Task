@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yamaha - Home</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <script src="js/data.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/app.js"></script>
+  </head>
+  <body>
+    <div id="header-placeholder"></div>
+
+    <section class="hero-section">
+      <div class="hero-container">
+        <div class="hero-left">
+          <img src="images/hero.jpg" alt="Hero Bike" />
+        </div>
+        <div class="hero-right">
+          <h1>Ready to Race ✔</h1>
+          <p>
+            Experience unmatched performance and style with Yamaha's latest
+            collection of bikes.
+          </p>
+          <button class="hero-btn">Explore Bikes</button>
+        </div>
+      </div>
+    </section>
+
+    <div class="features-bar">
+      <div class="container">
+        <div class="feature-item">
+          <i class="fa-solid fa-shield"></i><span>Warranty</span>
+        </div>
+        <div class="feature-item">
+          <i class="fa-solid fa-truck"></i><span>Fast Delivery</span>
+        </div>
+        <div class="feature-item">
+          <i class="fa-solid fa-dollar-sign"></i><span>Best Prices</span>
+        </div>
+        <div class="feature-item">
+          <i class="fa-solid fa-thumbs-up"></i><span>Quality Bikes</span>
+        </div>
+        <div class="feature-item">
+          <i class="fa-solid fa-star"></i><span>Top Rated</span>
+        </div>
+      </div>
+    </div>
+
+    <section class="story-launch-section">
+      <div class="story-container">
+        <div class="images-row">
+          <div class="image-item">
+            <img src="images/story.jpg" alt="Our Story" />
+            <h3>Our Story</h3>
+          </div>
+          <div class="image-item">
+            <img src="images/FZ-V4M.png" alt="Next Launch" />
+            <h3>Next Launch</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="best-seller-banner">
+      <img src="images/logo.png" alt="Yamaha Logo" class="best-seller-logo" />
+      <h2 class="best-seller-title">Best Seller Bikes</h2>
+    </section>
+
+    <section class="products-section">
+      <div class="container" id="product-container"></div>
+    </section>
+
+    <section class="banner-section banner-one">
+      <img src="images/banner1.png" alt="Banner 1" />
+      <div class="banner-overlay"></div>
+      <div class="banner-content">
+        <h2>Special Launch</h2>
+        <button class="video-btn"><i class="fa-solid fa-play"></i></button>
+      </div>
+    </section>
+
+    <section class="banner-section banner-two">
+      <img src="images/Banner2.png" alt="Banner 2" />
+    </section>
+
+    <div id="footer-placeholder"></div>
+
+    <div id="orderPopup">
+      <span class="tick">✔</span>
+      <span>Order Placed!</span>
+    </div>
+
+    <script>
+      renderProducts(products, "product-container", 4);
+    </script>
+  </body>
+</html>
