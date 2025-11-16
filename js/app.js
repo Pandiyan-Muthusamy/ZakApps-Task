@@ -161,6 +161,11 @@ function initFilterAndSort() {
   sortSelect.addEventListener("change", applyFilters);
 }
 
+function goToProductDetail(id) {
+  window.location.href = `product-detail.html?id=${id}`;
+}
+
+
 let cartCount = parseInt(localStorage.getItem("cartCount") || 0);
 
 function updateCartCounter() {
